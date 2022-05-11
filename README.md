@@ -19,11 +19,11 @@ docker run \
    pwntr/samba-alpine
 
 ```
-samba full permission user:
-user: rio
-pass: letsdance
+# samba full permission user
+user: admin
+pass: admin
 
-Quick start for the impatient (discovery on your network will work fine):
+# Quick start for the impatient (discovery on your network will work fine):
 ```shell
 docker run \
   -d \
@@ -33,7 +33,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-Supplying port mappings only instead of --network=host might be subject to the limtations outlined above:
+# Supplying port mappings only instead of --network=host might be subject to the limtations outlined above:
 ```shell
 docker run \
   -d \
@@ -47,7 +47,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-With your own smb.conf and supervisord.conf configs:
+# With your own smb.conf and supervisord.conf configs:
 ```shell
 docker run \
   -d \
@@ -62,7 +62,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-To have the container start when the host boots, add docker's restart policy:
+# To have the container start when the host boots, add docker's restart policy:
 ```shell
 docker run \
   -d \
