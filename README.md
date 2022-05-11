@@ -9,7 +9,7 @@ and become the "local master" on your subnet, you need to supply the "--network 
 Mapping the ports alone is likely not sufficient for proper discovery as the processes inside the container are only aware of the internal Docker network, and not the host network. Maybe there's a config switch somewhere to supply a target broadcast network? In any case, directly accessing the shares works just fine this way.
 
 
-# Create Container
+### Create Container
 ```shell
 docker run \
    -d \
@@ -19,11 +19,11 @@ docker run \
    pwntr/samba-alpine
 
 ```
-# samba full permission user
+### samba full permission user
 user: admin
 pass: admin
 
-# Quick start for the impatient (discovery on your network will work fine):
+### Quick start for the impatient (discovery on your network will work fine):
 ```shell
 docker run \
   -d \
@@ -47,7 +47,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-# With your own smb.conf and supervisord.conf configs:
+### With your own smb.conf and supervisord.conf configs:
 ```shell
 docker run \
   -d \
@@ -62,7 +62,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-# To have the container start when the host boots, add docker's restart policy:
+### To have the container start when the host boots, add docker's restart policy:
 ```shell
 docker run \
   -d \
