@@ -33,7 +33,7 @@ docker run \
   pwntr/samba-alpine
 ```
 
-# Supplying port mappings only instead of --network=host might be subject to the limtations outlined above:
+### Supplying port mappings only instead of --network=host might be subject to the limtations outlined above:
 ```shell
 docker run \
   -d \
